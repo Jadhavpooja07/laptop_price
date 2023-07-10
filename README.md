@@ -1,4 +1,4 @@
-##Laptop Price Prediction 
+#Laptop Price Prediction 
 This project will predict laptop price based on inputs given by users.
 In this project I have used various machine learning techniques to predict the acuurate result depending on values entered by user for each feature.
 
