@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laptop Price Prediction</title>
+</head>
+<style> 
+    body { 
+    background-image: url("https://images.unsplash.com/photo-1582056615449-5dcb2332b3b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzl8fGxhcHRvcHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"); 
+     background-repeat:no-repeat; 
+     background-size:cover; 
+    }  </style>
+    
+<body>
+
+    <h1> Laptop Price Prediction </h1>
+    <form method="POST" action="/predict_price">
+        
+        <br>
+        <br>
+        <label>  Processor Brand:   </label>
+        <select name = "processor_brand">
+            <option value = "Intel">Intel</option>
+            <option value = "AMD">AMD</option>
+            <option value = "M1">M1</option>
+        </select>
+        <br>
+        <br>
+    
+        <label>Ram :</label>
+        <select name = "ram_gb">
+            <option value = "8 GB">8 GB</option>
+            <option value = "4 GB">4 GB</option>
+            <option value = "16 GB">16 GB</option>
+            <option value = "32 GB">32 GB</option>
+        </select>
+        <br>
+        <br>
+        
+        <label>SSD :</label>
+        <select name = "ssd">
+            <option value = "512 GB">512 GB</option>
+            <option value = "256 GB">256 GB</option>
+            <option value = "0 GB">0 GB</option>
+            <option value = "1024 GB">1024 GB</option>
+            <option value = "128 GB">128 GB</option>
+            <option value = "2048 GB">2048 GB</option>
+            <option value = "3072 GB">3072 GB</option>
+        </select>
+        <br>
+        <br>
+        
+        <label>HDD :</label>
+        <select name = "hdd">
+            <option value = "0 GB">0 GB</option>
+            <option value = "1024 GB">1024 GB</option>
+            <option value = "512 GB">512 GB</option>
+            <option value = "2048 GB">2048 GB</option>
+        </select>
+        <br>
+        <br>
+       
+        <label>OS bit:  </label>
+        <label>64-bit: </label> <input type = "radio" name= "os_bit" value = "64-bit">
+        <label>32-bit: </label> <input type = "radio" name= "os_bit" value = "32-bit">
+
+        <br>
+        <br>
+
+        <label>Touchscreen :  </label>
+        <label>Yes: </label> <input type = "radio" name= "Touchscreen" value = "Yes">
+        <label>No:  </label> <input type = "radio" name= "Touchscreen" value = "No">
+
+        <br>
+        <br>
+        
+        <label>Brand: </label>
+        <select name = "brand">
+            <option value = "DELL">DELL</option>
+            <option value = "Lenovo">Lenovo</option>
+            <option value = "HP">HP</option>
+            <option value = "acer">acer</option>
+            <option value = "MSI">MSI</option>
+            <option value = "APPLE">APPLE</option>
+            <option value = "Avita">Avita</option>
+            <option value = "ASUS">ASUS</option>
+
+        </select>
+        
+        <br>
+        <br>
+
+        <input type = "submit" value="SUBMIT">
+
+        <br>
+
+        <h4><strong>Your laptop price  will be <b> {{ prediction }} /- Rs.</b> Only </strong></h4>
+
+
+    </form>
+
+
+</body>
+</html>
